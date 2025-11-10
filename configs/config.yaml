@@ -1,0 +1,177 @@
+# ============================================================================
+# Configuration GitHub Stats Automation
+# ============================================================================
+# 
+# Ce fichier contient toute la configuration pour le système de statistiques
+# GitHub automatisé.
+#
+# Les variables d'environnement surchargent ces valeurs:
+# - GITHUB_TOKEN: Token d'authentification
+# - GITHUB_USERNAME: Nom d'utilisateur GitHub
+# - CACHE_ENABLED: Activer/désactiver le cache (true/false)
+# - LOG_LEVEL: Niveau de logging (DEBUG/INFO/WARNING/ERROR)
+#
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# Configuration GitHub
+# ----------------------------------------------------------------------------
+github:
+  # Token d'authentification GitHub (Personal Access Token)
+  # Permissions requises: repo (full), user (read)
+  # Créez-en un sur: https://github.com/settings/tokens
+  token: ""
+  
+  # Votre nom d'utilisateur GitHub
+  username: ""
+  
+  # URL de base de l'API GitHub (ne changez que si vous utilisez GitHub Enterprise)
+  api_url: "https://api.github.com"
+
+# ----------------------------------------------------------------------------
+# Options de Statistiques
+# ----------------------------------------------------------------------------
+stats:
+  # Inclure les dépôts privés dans les statistiques
+  include_private: true
+  
+  # Période d'analyse en jours (365 = 1 an)
+  days_back: 365
+  
+  # Nombre maximum de repos à récupérer par page (max: 100)
+  max_repos_per_page: 100
+  
+  # Nombre maximum de pages de commits à analyser par repo
+  # Augmentez pour plus de précision, diminuez pour plus de vitesse
+  max_commits_pages: 10
+  
+  # Inclure les statistiques détaillées de code (additions/suppressions)
+  # Note: Ces stats peuvent prendre du temps à générer
+  include_code_changes: true
+  
+  # Inclure l'analyse des langages de programmation
+  include_languages: true
+  
+  # Inclure la heatmap d'activité (commits par jour/heure)
+  include_heatmap: true
+  
+  # Inclure les contributions aux repos externes
+  # Note: Fonctionnalité en développement
+  include_external_contributions: false
+
+# ----------------------------------------------------------------------------
+# Configuration du Cache
+# ----------------------------------------------------------------------------
+cache:
+  # Activer le système de cache
+  # Le cache réduit les requêtes API et accélère les exécutions
+  enabled: true
+  
+  # Durée de validité du cache en heures
+  # 24h = 1 jour, 168h = 1 semaine
+  max_age_hours: 24
+  
+  # Répertoire où stocker les fichiers de cache
+  directory: ".cache"
+  
+  # Nettoyer automatiquement les vieux fichiers de cache
+  auto_clean: true
+
+# ----------------------------------------------------------------------------
+# Configuration Rate Limiting
+# ----------------------------------------------------------------------------
+rate_limit:
+  # Nombre minimum de requêtes API restantes avant d'attendre
+  # GitHub autorise 5000 requêtes/heure avec authentification
+  min_remaining: 100
+  
+  # Attendre automatiquement si la limite est atteinte
+  wait_on_limit: true
+  
+  # Intervalle de vérification du rate limit (secondes)
+  check_interval: 5
+
+# ----------------------------------------------------------------------------
+# Configuration du README
+# ----------------------------------------------------------------------------
+readme:
+  # Fichier template personnalisé (optionnel)
+  # Laissez vide pour utiliser le template par défaut
+  template: ""
+  
+  # Sections à inclure dans le README
+  # Options: header, stats, repos, prs, issues, languages, activity, technologies, contact
+  sections:
+    - header
+    - stats
+    - repos
+    - prs
+    - issues
+    - languages
+    - activity
+    - technologies
+    - contact
+  
+  # Style des badges shields.io
+  # Options: flat, flat-square, plastic, for-the-badge, social
+  badge_style: "for-the-badge"
+  
+  # Inclure la date/heure de mise à jour dans le README
+  include_update_time: true
+
+# ----------------------------------------------------------------------------
+# Configuration Logging
+# ----------------------------------------------------------------------------
+logging:
+  # Niveau de log (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+  # DEBUG: Maximum d'informations (développement)
+  # INFO: Informations normales (production)
+  # WARNING: Seulement les avertissements
+  # ERROR: Seulement les erreurs
+  level: "INFO"
+  
+  # Répertoire des fichiers de log
+  directory: "logs"
+  
+  # Taille maximale d'un fichier log (Mo)
+  max_size_mb: 10
+  
+  # Nombre de fichiers de backup à conserver
+  backup_count: 5
+
+# ----------------------------------------------------------------------------
+# Configuration des Sorties
+# ----------------------------------------------------------------------------
+output:
+  # Fichier de sortie du README généré (local)
+  readme_file: "README.md"
+  
+  # Sauvegarder aussi les statistiques en JSON
+  save_json: true
+  
+  # Fichier JSON de sortie
+  json_file: "stats/github_stats.json"
+  
+  # Afficher les statistiques dans la console
+  print_to_console: true
+
+# ----------------------------------------------------------------------------
+# Options Avancées
+# ----------------------------------------------------------------------------
+advanced:
+  # Timeout des requêtes HTTP (secondes)
+  request_timeout: 30
+  
+  # Nombre de tentatives en cas d'échec
+  max_retries: 3
+  
+  # Délai entre les tentatives (secondes)
+  retry_delay: 2
+  
+  # Mode parallèle (expérimental)
+  # Attention: Peut consommer rapidement le rate limit
+  parallel_requests: false
+  
+  # Nombre de workers parallèles
+  parallel_workers: 3
+
