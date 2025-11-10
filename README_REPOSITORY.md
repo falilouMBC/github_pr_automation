@@ -1,176 +1,415 @@
-# 🚀 GitHub Stats Automation
-
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-Ready-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A277FF&center=true&vCenter=true&multiline=true&width=800&height=100&lines=Hi+%F0%9F%91%8B+I'm+Falilou+MBC;Full+Stack+Developer+%7C+Tech+Enthusiast" alt="Typing SVG" />
 
-**Système automatisé de statistiques GitHub incluant les dépôts privés**
+<br>
 
-[Installation](#-installation-rapide) • [Utilisation](#-utilisation) • [Documentation](#-documentation) • [Exemples](#-exemples)
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=falilouMBC&label=Profile%20views&color=blueviolet&style=flat-square" alt="Profile views" />
+  <img src="https://img.shields.io/github/followers/falilouMBC?label=Followers&style=flat-square&color=blueviolet" alt="followers" />
+</p>
+
+### 💻 Passionate Developer | 🚀 Problem Solver | 🌍 Open Source Contributor
+
+> Building elegant solutions to complex problems, one commit at a time.
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-5340ff?style=for-the-badge&logo=Google-chrome&logoColor=white)](https://faliloumbc.github.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/falilouMBC)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/falilouMBC)
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
 
 </div>
 
----
+<br>
 
-## 🎯 À Propos
+## 👨‍💻 About Me
 
-**GitHub Stats Automation** génère automatiquement des statistiques GitHub complètes et les affiche sur votre profil. L'avantage principal : **accès aux dépôts privés** pour des statistiques vraiment complètes !
+```javascript
+const falilouMBC = {
+    location: "🌍 Worldwide",
+    role: "Full Stack Developer",
+    code: ["Python", "JavaScript", "TypeScript", "Java", "PHP"],
+    technologies: {
+        frontEnd: ["React", "Angular", "Vue.js"],
+        backEnd: ["Node.js", "Django", "Laravel", "Spring Boot"],
+        databases: ["MongoDB", "PostgreSQL", "MySQL"],
+        devOps: ["Docker", "GitHub Actions", "AWS"],
+        tools: ["Git", "VS Code", "Postman"]
+    },
+    currentFocus: "Building scalable web applications & contributing to open source",
+    funFact: "I debug with console.log() and I'm not ashamed! 😄"
+};
+```
 
-### ✨ Fonctionnalités
+<br>
 
-- ✅ **Statistiques complètes** : Repos privés inclus
-- ✅ **Automatisation** : GitHub Actions intégrée
-- ✅ **Cache intelligent** : Optimise les requêtes API
-- ✅ **Rate limit aware** : Gère automatiquement les limites
-- ✅ **Personnalisable** : Configuration YAML complète
-- ✅ **Sans dépendances** : Seulement `requests` et `pyyaml`
+## 🔥 GitHub Stats Automation Tool
 
-### 📊 Statistiques Collectées
+This repository contains an **automated GitHub statistics generator** that I built to track my complete development activity, including private repositories.
 
-- Dépôts (publics + privés)
-- Commits sur période configurable
-- Pull Requests (total, ouvertes, mergées)
-- Issues (ouvertes, fermées)
-- Étoiles totales
-- Langages de programmation (avec %)
-- Modifications de code (additions/suppressions)
-- Heatmap d'activité
+<p align="center">
+  <a href="#-features">Features</a> •
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-documentation">Documentation</a> •
+  <a href="#-tech-stack">Tech Stack</a>
+</p>
 
----
+<br>
 
-## ⚡ Installation Rapide
+## 🌟 Overview
+
+> **Automatically generate comprehensive GitHub statistics for your profile, including private repositories**
+
+GitHub Stats Automation is a powerful, production-ready tool that collects and displays detailed statistics from your GitHub account. Unlike other solutions, it has **full access to private repositories**, giving you truly complete analytics.
+
+<br>
+
+## ✨ Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 📊 Comprehensive Analytics
+- 🔒 **Private Repository Support**
+- 📈 Customizable time periods
+- 🌍 Multi-language detection
+- 📉 Code change tracking
+- 🔥 Activity heatmaps
+
+</td>
+<td width="50%">
+
+### 🚀 Production Ready
+- ⚡ Smart caching system
+- 🛡️ Rate limit management
+- 🔄 Auto-retry mechanism
+- 📝 Extensive logging
+- 🤖 GitHub Actions ready
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🎨 Highly Customizable
+- 📋 YAML configuration
+- 🎭 Template system
+- 🏷️ Badge customization
+- 📊 Section management
+- 🌈 Multiple output formats
+
+</td>
+<td width="50%">
+
+### 🔧 Developer Friendly
+- 🐍 Pure Python 3.10+
+- 📦 Minimal dependencies
+- 📚 Complete documentation
+- 💻 10+ code examples
+- 🧪 Easy to extend
+
+</td>
+</tr>
+</table>
+
+<br>
+
+## 📊 What Gets Tracked
+
+<div align="center">
+
+| Metric | Description | Privacy |
+|--------|-------------|---------|
+| 📦 **Repositories** | Public & Private repos | ✅ Full Access |
+| 📝 **Commits** | All commits in period | ✅ Full Access |
+| 🔀 **Pull Requests** | Created, merged, closed | ✅ Full Access |
+| ❗ **Issues** | Opened, closed | ✅ Full Access |
+| ⭐ **Stars** | Total stars received | ✅ Full Access |
+| 💻 **Languages** | Code distribution | ✅ Full Access |
+| ➕➖ **Code Changes** | Lines added/removed | ✅ Full Access |
+| 🔥 **Activity** | Day/hour heatmap | ✅ Full Access |
+
+</div>
+
+## 🚀 Quick Start
+
+<details>
+<summary><b>📋 Prerequisites</b></summary>
+<br>
+
+- Python 3.10 or higher
+- Git installed
+- GitHub account with token creation permissions
+- A public repository named exactly as your username (for profile stats)
+
+</details>
+
+<details open>
+<summary><b>⚡ Installation (5 minutes)</b></summary>
+<br>
+
+### Step 1: Clone the Repository
 
 ```bash
-# 1. Cloner le repository
 git clone https://github.com/falilouMBC/github_pr_automation.git
 cd github_pr_automation
+```
 
-# 2. Installer les dépendances
+### Step 2: Install Dependencies
+
+```bash
 pip install requests pyyaml
-
-# 3. Configurer les credentials
-# Créer un fichier .env à la racine
-cat > .env << EOF
-GITHUB_TOKEN=ghp_votre_token_ici
-GITHUB_USERNAME=votre_username
-EOF
-
-# 4. Vérifier la configuration
-python scripts/check_env.py
-
-# 5. Tester (sans publier)
-python scripts/update_stats.py --dry-run
-
-# 6. Publier !
-python scripts/update_stats.py
 ```
 
----
+> 💡 **Optional**: Create a virtual environment first
+> ```bash
+> python -m venv venv
+> source venv/bin/activate  # On Windows: venv\Scripts\activate
+> ```
 
-## 🔑 Créer un Token GitHub
+### Step 3: Create Your GitHub Token
 
-1. Allez sur https://github.com/settings/tokens
-2. **"Generate new token (classic)"**
-3. Nom : `GitHub Stats Automation`
-4. Permissions :
-   - ✅ `repo` (Full control)
-   - ✅ `user` (Read access)
-5. Copiez le token (commence par `ghp_`)
-6. Ajoutez dans `.env` : `GITHUB_TOKEN=ghp_...`
+1. Go to [GitHub Settings → Tokens](https://github.com/settings/tokens)
+2. Click **"Generate new token (classic)"**
+3. Name it: `GitHub Stats Automation`
+4. Select scopes:
+   - ✅ `repo` (Full control of private repositories)
+   - ✅ `user` (Read user profile data)
+5. Click **"Generate token"**
+6. **Copy the token** (starts with `ghp_`)
 
----
+### Step 4: Configure Environment
 
-## 🎮 Utilisation
-
-### Mode Basique
+Create a `.env` file at the project root:
 
 ```bash
-python scripts/update_stats.py
+GITHUB_TOKEN=ghp_your_token_here
+GITHUB_USERNAME=your_github_username
 ```
 
-### Avec Options
+Or use the verification script to create it:
 
 ```bash
-# Test sans publier
-python scripts/update_stats.py --dry-run
-
-# Sans cache
-python scripts/update_stats.py --no-cache
-
-# Mode verbeux
-python scripts/update_stats.py --verbose
-
-# Export JSON
-python scripts/update_stats.py --json stats/output.json
-
-# Nettoyer le cache
-python scripts/update_stats.py --clear-cache
-```
-
-### Vérifier la Configuration
-
-```bash
-# Vérifier .env, token, connexion API
 python scripts/check_env.py
 ```
 
----
+### Step 5: Verify Setup
 
-## 📁 Structure du Projet
+```bash
+python scripts/check_env.py
+```
+
+Expected output:
+```
+✅ Configuration loaded
+✅ All required variables present
+✅ Token format valid
+✅ Username format valid
+✅ API connection successful
+```
+
+### Step 6: Run!
+
+```bash
+# Test mode (doesn't publish)
+python scripts/update_stats.py --dry-run
+
+# For real (updates your profile)
+python scripts/update_stats.py
+```
+
+🎉 **Done!** Check your profile at `https://github.com/your_username`
+
+</details>
+
+## 💻 Usage
+
+<div align="center">
+
+### Basic Commands
+
+</div>
+
+```bash
+# Standard run (updates your profile)
+python scripts/update_stats.py
+
+# Dry run (preview without publishing)
+python scripts/update_stats.py --dry-run
+
+# Verify environment setup
+python scripts/check_env.py
+```
+
+<details>
+<summary><b>🎛️ Advanced Options</b></summary>
+<br>
+
+| Option | Description | Example |
+|--------|-------------|---------|
+| `--dry-run` | Preview without publishing | `python scripts/update_stats.py --dry-run` |
+| `--no-cache` | Bypass cache, fetch fresh data | `python scripts/update_stats.py --no-cache` |
+| `--verbose` | Enable detailed logging | `python scripts/update_stats.py --verbose` |
+| `--clear-cache` | Clear cache before running | `python scripts/update_stats.py --clear-cache` |
+| `--json FILE` | Export stats to JSON | `python scripts/update_stats.py --json stats.json` |
+| `--output FILE` | Custom README output | `python scripts/update_stats.py --output README.md` |
+| `--config FILE` | Custom config file | `python scripts/update_stats.py --config custom.yaml` |
+| `--show-config` | Display current configuration | `python scripts/update_stats.py --show-config` |
+
+### Combined Options
+
+```bash
+# Debug mode with fresh data
+python scripts/update_stats.py --verbose --no-cache --dry-run
+
+# Production run with JSON export
+python scripts/update_stats.py --json stats/backup.json
+
+# Clean run
+python scripts/update_stats.py --clear-cache --no-cache
+```
+
+</details>
+
+## 📁 Project Structure
 
 ```
 github_pr_automation/
-├── .github/workflows/
-│   └── update-stats.yml       # GitHub Actions
-├── configs/
-│   ├── config.yaml            # Configuration
-│   └── env.example            # Template .env
-├── docs/
-│   ├── QUICKSTART.md          # Guide rapide
-│   ├── ENV_SETUP.md           # Config .env
-│   └── DEVELOPER_GUIDE.md     # Guide dev
-├── scripts/
-│   ├── update_stats.py        # Script principal
-│   └── check_env.py           # Vérification
-├── src/
-│   ├── github_stats.py        # Classe principale
-│   ├── cache_manager.py       # Cache
-│   ├── rate_limiter.py        # Rate limiting
-│   ├── config.py              # Config
-│   ├── env_loader.py          # Chargement .env
-│   └── utils.py               # Utilitaires
-├── templates/
-│   └── profile_template.md    # Template README
-├── exemples/
-│   └── example_usage.py       # Exemples
-├── .env                       # Vos credentials (à créer)
-├── .gitignore                 # Fichiers ignorés
-└── README.md                  # Vos stats de profil
+│
+├── 📂 .github/workflows/
+│   └── update-stats.yml           # 🤖 GitHub Actions workflow
+│
+├── 📂 configs/
+│   ├── config.yaml                # ⚙️  Main configuration
+│   └── env.example                # 📝 Environment template
+│
+├── 📂 docs/
+│   ├── QUICKSTART.md              # 🚀 5-minute setup guide
+│   ├── ENV_SETUP.md               # 🔐 .env configuration
+│   └── DEVELOPER_GUIDE.md         # 👨‍💻 Developer documentation
+│
+├── 📂 scripts/
+│   ├── update_stats.py            # 🎯 Main entry point
+│   └── check_env.py               # ✅ Environment validator
+│
+├── 📂 src/                        # 🏗️  Core modules
+│   ├── __init__.py                # 📦 Package initialization
+│   ├── github_stats.py            # 📊 Statistics collector
+│   ├── cache_manager.py           # 💾 Intelligent caching
+│   ├── rate_limiter.py            # 🛡️  Rate limit handler
+│   ├── config.py                  # ⚙️  Configuration manager
+│   ├── env_loader.py              # 🔐 .env file loader
+│   └── utils.py                   # 🔧 Utility functions
+│
+├── 📂 templates/
+│   └── profile_template.md        # 🎨 README template
+│
+├── 📂 exemples/
+│   └── example_usage.py           # 💡 10+ usage examples
+│
+├── 📄 .env                        # 🔒 Your credentials (create this)
+├── 📄 .gitignore                  # 🚫 Ignored files
+├── 📄 README.md                   # 📊 Your profile stats
+└── 📄 LICENSE                     # ⚖️  MIT License
 ```
 
----
+<div align="center">
 
-## 🤖 Automatisation avec GitHub Actions
+### 🏗️ Architecture Overview
 
-### Configuration
+```mermaid
+graph TD
+    A[update_stats.py] --> B[Config Manager]
+    A --> C[GitHub Stats Collector]
+    C --> D[Cache Manager]
+    C --> E[Rate Limiter]
+    C --> F[API Calls]
+    F --> G[GitHub API]
+    C --> H[README Generator]
+    H --> I[Your Profile]
+```
 
-1. **Créer le repo de profil** : `votre_username/votre_username` (public)
+</div>
 
-2. **Ajouter le secret** :
-   - Settings → Secrets → Actions
-   - Nouveau secret : `STATS_TOKEN`
-   - Valeur : Votre token `ghp_...`
+## 🤖 GitHub Actions Automation
 
-3. **Copier le workflow** :
-   ```bash
-   cp .github/workflows/update-stats.yml ../votre_username/.github/workflows/
-   ```
+<div align="center">
 
-4. **Le workflow s'exécute** :
-   - Tous les jours à minuit (UTC)
-   - Manuellement via l'interface
+### ⚡ Automatic Daily Updates
+
+Set it up once, and your profile stats update automatically every day!
+
+</div>
+
+<details>
+<summary><b>📝 Setup Instructions</b></summary>
+<br>
+
+### Step 1: Create Profile Repository
+
+Create a public repository with the **exact same name** as your username:
+
+```
+https://github.com/your_username/your_username
+```
+
+### Step 2: Add GitHub Secret
+
+1. Go to your **profile repository** settings
+2. Navigate to: `Settings` → `Secrets and variables` → `Actions`
+3. Click `New repository secret`
+4. Add:
+   - **Name**: `STATS_TOKEN`
+   - **Value**: Your GitHub token (the one starting with `ghp_`)
+5. Click `Add secret`
+
+### Step 3: Copy Workflow File
+
+```bash
+# From this project
+cp .github/workflows/update-stats.yml ../your_username/.github/workflows/
+
+# Navigate to your profile repo
+cd ../your_username
+
+# Commit and push
+git add .github/workflows/update-stats.yml
+git commit -m "🤖 Add automated stats updater"
+git push
+```
+
+### Step 4: Enable Workflow
+
+1. Go to the `Actions` tab in your profile repository
+2. You should see **"Update GitHub Stats"** workflow
+3. Click on it and enable if needed
+4. Click `Run workflow` to test manually
+
+</details>
+
+<details>
+<summary><b>⏰ Schedule Configuration</b></summary>
+<br>
+
+The workflow runs:
+
+- 🕐 **Daily at midnight UTC** (automatic)
+- 🖱️ **On-demand** (manual trigger from Actions tab)
+- 📝 **On push** to workflow file (optional)
+
+Customize the schedule in `.github/workflows/update-stats.yml`:
+
+```yaml
+on:
+  schedule:
+    - cron: '0 0 * * *'     # Daily at 00:00 UTC
+    # - cron: '0 */6 * * *' # Every 6 hours
+    # - cron: '0 12 * * *'  # Daily at noon
+```
+
+</details>
 
 ---
 
@@ -212,7 +451,29 @@ github_pr_automation/
 
 Voir votre profil : https://github.com/falilouMBC
 
----
+## 🛠️ Tech Stack
+
+<div align="center">
+
+### Built With
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![YAML](https://img.shields.io/badge/YAML-CB171E?style=for-the-badge&logo=yaml&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+
+### Core Dependencies
+
+![Requests](https://img.shields.io/badge/Requests-1572B6?style=for-the-badge)
+![PyYAML](https://img.shields.io/badge/PyYAML-FF6F61?style=for-the-badge)
+
+### CI/CD & Automation
+
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![Cron](https://img.shields.io/badge/Cron_Jobs-4EAA25?style=for-the-badge)
+
+</div>
+
+<br>
 
 ## ⚙️ Configuration
 
@@ -316,47 +577,84 @@ cache:
 2. Le repo doit s'appeler **exactement** comme votre username
 3. Le fichier doit s'appeler `README.md`
 
----
+## 🤝 Contributing
 
-## 🤝 Contribution
+Contributions, issues, and feature requests are welcome!
 
-Les contributions sont bienvenues !
+Feel free to check the [issues page](https://github.com/falilouMBC/github_pr_automation/issues) if you want to contribute.
 
-1. Fork le projet
-2. Créer une branche : `git checkout -b feature/ma-feature`
-3. Commit : `git commit -m 'Ajout de ma feature'`
-4. Push : `git push origin feature/ma-feature`
-5. Ouvrir une Pull Request
+<details>
+<summary><b>🔧 How to Contribute</b></summary>
+<br>
 
----
+1. **Fork** the repository
+2. **Create** your feature branch
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. **Commit** your changes
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+4. **Push** to the branch
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. **Open** a Pull Request
 
-## 📝 Licence
+</details>
 
-Ce projet est sous licence MIT.
+<br>
 
----
+## 📝 License
 
-## 🙏 Remerciements
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-- [GitHub API](https://docs.github.com/en/rest)
-- [Shields.io](https://shields.io/)
-- Communauté open source
+<br>
 
----
+## 💫 Show Your Support
 
-## 📞 Support
+Give a ⭐️ if this project helped you!
 
-- 🐛 [Signaler un bug](https://github.com/falilouMBC/github_pr_automation/issues)
-- 💡 [Demander une fonctionnalité](https://github.com/falilouMBC/github_pr_automation/issues)
-- 💬 [Discussions](https://github.com/falilouMBC/github_pr_automation/discussions)
+<div align="center">
+
+[![GitHub stars](https://img.shields.io/github/stars/falilouMBC/github_pr_automation?style=social)](https://github.com/falilouMBC/github_pr_automation/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/falilouMBC/github_pr_automation?style=social)](https://github.com/falilouMBC/github_pr_automation/network/members)
+
+</div>
+
+<br>
+
+## 📬 Contact
+
+<div align="center">
+
+### Let's Connect! 🌐
+
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@faliloumbc.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/falilouMBC)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/falilouMBC)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/falilouMBC)
+
+</div>
+
+<br>
 
 ---
 
 <div align="center">
 
-**Fait avec ❤️ pour automatiser les statistiques GitHub**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
 
-⭐ **Si ce projet vous aide, donnez-lui une étoile !** ⭐
+### Made with 💜 by [Falilou MBC](https://github.com/falilouMBC)
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=1000&color=A277FF&center=true&vCenter=true&width=600&lines=Thanks+for+visiting!+%F0%9F%91%8B;Feel+free+to+reach+out!+%F0%9F%93%A7;Happy+Coding!+%F0%9F%9A%80" alt="Typing SVG" />
+</p>
+
+**⭐ Star this repo if you find it useful! ⭐**
+
+<sub>Built with Python • Automated with GitHub Actions • Powered by Coffee ☕</sub>
 
 </div>
 
