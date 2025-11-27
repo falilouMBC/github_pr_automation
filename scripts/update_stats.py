@@ -61,7 +61,7 @@ from src.utils import format_number, validate_github_token, validate_github_user
 def parse_arguments():
     """
     Parse les arguments de la ligne de commande
-    
+
     Returns:
         Arguments parsés
     """

@@ -1,4 +1,50 @@
-# 👋 Bonjour, je suis {{username}}!
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A277FF&center=true&vCenter=true&multiline=true&width=800&height=100&lines=Hi+%F0%9F%91%8B+I'm+{{username}};Full+Stack+Developer+%7C+Tech+Enthusiast" alt="Typing SVG" />
+
+<br>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username={{username}}&label=Profile%20views&color=blueviolet&style=flat-square" alt="Profile views" />
+  <img src="https://img.shields.io/github/followers/{{username}}?label=Followers&style=flat-square&color=blueviolet" alt="followers" />
+</p>
+
+### 💻 Passionate Developer | 🚀 Problem Solver | 🌍 Open Source Contributor
+
+> Building elegant solutions to complex problems, one commit at a time.
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-5340ff?style=for-the-badge&logo=Google-chrome&logoColor=white)](https://{{username}}.github.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/{{username}})
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/{{username}})
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
+
+</div>
+
+<br>
+
+## 👨‍💻 About Me
+
+```javascript
+const {{username}} = {
+    location: "🌍 Worldwide",
+    role: "Full Stack Developer",
+    code: ["Python", "JavaScript", "TypeScript", "Java", "PHP"],
+    technologies: {
+        frontEnd: ["React", "Angular", "Vue.js"],
+        backEnd: ["Node.js", "Django", "Laravel", "Spring Boot"],
+        databases: ["MongoDB", "PostgreSQL", "MySQL"],
+        devOps: ["Docker", "GitHub Actions", "AWS"],
+        tools: ["Git", "VS Code", "Postman"]
+    },
+    currentFocus: "Building scalable web applications & contributing to open source",
+    funFact: "I debug with console.log() and I'm not ashamed! 😄"
+};
+```
+
+<br>
+
+# 📊 GitHub Statistics - {{username}}
 
 <div align="center">
 
